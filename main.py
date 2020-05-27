@@ -5,7 +5,9 @@ client = MongoClient(url)
 db = client['heroku_k0cr1wdd']
 collection = db['Test']
 
+# ttt
 collection.insert_one( {'a':'b'} )
+
 rows = collection.find({})
 for row in rows:
   print (row)
